@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arraySpinner">
+        <item>По имени</item>
+        <item>По размеру (увел)</item>
+        <item>По размеру (умен)</item>
+        <item>По расширению</item>
+        <item>По дате</item>
+    </array>
+
+    <array name="editSpinner">
+        <item>Все файлы</item>
+        <item>Изменённые</item>
+    </array>
+</resources>

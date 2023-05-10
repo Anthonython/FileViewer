@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mainitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:id="@+id/imgFile" app:srcCompat="@mipmap/imgfolder1"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Тест длинное название файла"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:id="@+id/FileName"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/01/2000"
+                    android:textSize="10sp"
+                    android:maxLines="1"
+                    android:maxWidth="100dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/FileData" />
+        </LinearLayout>
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="7dp"
+                android:id="@+id/imgShare" app:srcCompat="@drawable/share"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="20MB"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/FileSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
