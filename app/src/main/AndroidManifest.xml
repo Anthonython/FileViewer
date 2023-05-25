@@ -19,8 +19,9 @@
         android:theme="@style/Theme.FileViewer"
         tools:targetApi="31" >
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:requestLegacyExternalStorage="true"
+            android:screenOrientation="portrait"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

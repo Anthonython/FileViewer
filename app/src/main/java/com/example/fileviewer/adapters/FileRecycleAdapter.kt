@@ -30,7 +30,7 @@ class FileRecycleAdapter(private val context: Context, private val listener: Lis
 
         holder.init(item)
         holder.itemView.setOnClickListener {
-            if (item.isDirectory)  listener.updateList(File(item.path))
+            if (item.isDirectory)  listener.updateList(File(item.path), File(item.path).listFiles())
             else context.startActivity(Intent(Intent.ACTION_VIEW).apply {
                 setDataAndTypeAndNormalize(contentUri, item.getMimeType())
                 addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION or Intent.FLAG_GRANT_READ_URI_PERMISSION)
